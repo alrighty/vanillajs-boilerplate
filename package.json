@@ -1,0 +1,49 @@
+{
+  "name": "vanillajs-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for vanilla.js projects.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && webpack --colors --config webpack.production.js",
+    "start": "webpack-dev-server --colors --inline --hot",
+    "clean": "rimraf dist",
+    "lint": "eslint src/js; true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alrighty/vanillajs-boilerplate.git"
+  },
+  "keywords": [
+    "ES6",
+    "webpack",
+    "boilerplate"
+  ],
+  "author": "Andrew M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alrighty/vanillajs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/alrighty/vanillajs-boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.2",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^4.1.8",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.8.1",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.1",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
