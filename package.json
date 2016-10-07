@@ -4,10 +4,10 @@
   "description": "Boilerplate for vanilla.js projects.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && webpack --colors --config webpack.production.js",
+    "build": "npm run clean && webpack --colors",
     "start": "webpack-dev-server --colors --inline --hot",
     "clean": "rimraf dist",
-    "lint": "eslint src/js; true"
+    "lint": "eslint src/js"
   },
   "repository": {
     "type": "git",
@@ -47,6 +47,7 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.1"
   }
 }
